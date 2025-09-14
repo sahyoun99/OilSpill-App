@@ -74,6 +74,7 @@ export default function DetectClient() {
         verdict: r.result,
         oil_spill_pixels: r.oil_spill_pixels,
         percentage: r.percentage,
+        
       }, null, 2))
     })
 
