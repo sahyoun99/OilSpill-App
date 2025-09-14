@@ -75,7 +75,7 @@ function label(id: string) {
     default: return id
   }
 }
-function NavItem({ href, label, onClick }: { href: string; label: string; onClick?: () => void }) {
+function NavItem({ href, label, active, onClick }: { href: string; label: string; active: boolean; onClick?: () => void }) {
   return (
     <Link
       href={href}
