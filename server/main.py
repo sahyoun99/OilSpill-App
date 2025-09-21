@@ -8,6 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import tensorflow as tf
 import cv2
+import gdown
+
 
 load_dotenv()
 
@@ -67,11 +69,14 @@ custom_objects = {
     # "channel_attention": channel_attention,
 }
 
-MODEL_PATH = os.getenv("MODEL_PATH")
-if not MODEL_PATH:
-    raise RuntimeError("MODEL_PATH env var not set")
+MODEL_PATH = os.getenv("MODEL_PATH", "model.h5")
+DRIVE_ID = os.getenv("MODEL_DRIVE_ID")  # put this in .env
 
-# Load ONCE at startup
+if not os.path.exists(MODEL_PATH):
+    print(f"Downloading model from Google Drive ID={DRIVE_ID}...")
+    url = f"https://drive.google.com/uc?id={DRIVE_ID}"
+    gdown.download(url, MODEL_PATH, quiet=False)
+
 model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects)
 
 # ---------- FastAPI app ----------
