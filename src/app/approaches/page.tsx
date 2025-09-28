@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import { GitBranch, Layers, Target, BarChart3, Zap, Brain, Gauge, CheckCircle2 } from 'lucide-react';
+import { GitBranch, Target, BarChart3, Zap, CheckCircle2 } from 'lucide-react';
 
 const approaches = [
   {
@@ -60,7 +60,7 @@ const evaluationMetrics = [
     description: 'Pixel-level evaluation of oil spill detection accuracy',
     metrics: [
       { name: 'Mean IoU (mIoU)', desc: 'Average IoU across all classes' },
-            { name: 'Accuracy', desc: 'Overall correctness of oil/no-oil predictions' },
+      { name: 'Accuracy', desc: 'Overall correctness of oil/no-oil predictions' },
       { name: 'IoU-oil', desc: 'Harmonic mean of precision and recall for segmentation' },
        { name: 'IoU-No-oil', desc: 'Harmonic mean of precision and recall for segmentation' },
       { name: 'F1 Score', desc: 'Balance between precision and recall' },

@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import { Target, GitCompare, Brain, Globe, CheckCircle2, ArrowRight, Zap, Users, Award, TrendingUp } from 'lucide-react';
+import { Target, GitCompare, Brain, Globe, CheckCircle2, ArrowRight, Users, Award, TrendingUp } from 'lucide-react';
 
 const objectives = [
   {
@@ -95,6 +95,7 @@ const ModernObjectivesPage = () => {
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        console.log(activeObjective)
         if (isVisible) {
           section.classList.add('fade-in-active');
         }

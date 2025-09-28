@@ -1,9 +1,8 @@
 'use client'
-import React, { useState, useEffect } from 'react';
-import { ChevronDown, Activity, CheckCircle, MapPin, Database, ArrowRight, Play, Pause } from 'lucide-react';
+import React, {useEffect } from 'react';
+import { ChevronDown, Activity, CheckCircle, MapPin, Database, ArrowRight} from 'lucide-react';
 
 const ModernHomepage = () => {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const stats = [
     { label: 'Avg. mask IoU', value: '93.8%', icon: Activity },

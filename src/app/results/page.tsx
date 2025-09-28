@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { BarChart3, TrendingUp, Award, Zap, GitBranch, Target, CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
+import { TrendingUp, Award, Zap, GitBranch, Target, CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
 
 const finalAnalysis = {
   singleStage: {
@@ -102,6 +102,7 @@ const ModernResultsPage = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+        console.log(activeImage)
       const sections = document.querySelectorAll('.fade-in-section');
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
