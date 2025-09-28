@@ -272,7 +272,7 @@ const ModernObjectivesPage = () => {
             Explore Our Progress
           </h2>
           <p className="text-xl text-slate-300 mb-12">
-            Discover how we're achieving these objectives through innovative approaches and rigorous evaluation
+            Discover how we are achieving these objectives through innovative approaches and rigorous evaluation
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 

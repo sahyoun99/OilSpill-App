@@ -76,6 +76,7 @@ const ModernAboutPage = () => {
   const [activeResearcher, setActiveResearcher] = useState<number | null>(null);
 
   useEffect(() => {
+    console.log(activeResearcher)
     const handleScroll = () => {
       const sections = document.querySelectorAll('.fade-in-section');
       sections.forEach(section => {

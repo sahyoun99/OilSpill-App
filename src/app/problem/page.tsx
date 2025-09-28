@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import { AlertTriangle, Droplets, Fish, DollarSign, ExternalLink, Play } from 'lucide-react';
+import { AlertTriangle, Droplets, Fish, DollarSign, ExternalLink } from 'lucide-react';
 
 const FACTS = [
   { 
@@ -55,6 +55,7 @@ const ModernProblemPage = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      console.log(activeGalleryItem)
       const sections = document.querySelectorAll('.fade-in-section');
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
