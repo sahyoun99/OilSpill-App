@@ -1,6 +1,8 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
+
 
 const SECTIONS = ['home','problem','objective','about','approaches','results'] as const;
 
@@ -92,9 +94,9 @@ export default function Navbar(): JSX.Element {
           : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto h-20 px-6 flex items-center justify-between">
-          <a href="/" className="font-black text-2xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <Link href="/" className="font-black text-2xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Oil Spill AI
-          </a>
+          </Link>
           
           {/* Desktop */}
           <nav className="hidden lg:flex items-center gap-2">
