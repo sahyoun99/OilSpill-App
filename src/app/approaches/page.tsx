@@ -18,8 +18,8 @@ const approaches = [
       'Faster inference with single forward pass'
     ],
     metrics: {
-      speed: '95ms',
-      accuracy: '85%',
+      IOU: '93.80%',
+      accuracy: '99.05%',
       models: '49'
     },
     imageSrc: '/single-stage.png',
@@ -41,9 +41,9 @@ const approaches = [
       'Improved computational efficiency for large areas'
     ],
     metrics: {
-      speed: '127ms',
-      accuracy: '91%',
-      models: '98'
+      IOU: '87.96%',
+      accuracy: '98.25%',
+      models: '49'
     },
     imageSrc: '/double-stage.png',
     pros: ['Higher precision', 'Reduced false positives', 'Specialized processing'],
@@ -173,8 +173,8 @@ const ModernApproachesPage = () => {
                   {/* Metrics */}
                   <div className="grid grid-cols-3 gap-4 mb-8">
                     <div className="text-center bg-white/5 rounded-xl p-4">
-                      <div className="text-2xl font-black text-blue-400">{approach.metrics.speed}</div>
-                      <div className="text-xs text-slate-400">Avg Speed</div>
+                      <div className="text-2xl font-black text-blue-400">{approach.metrics.IOU}</div>
+                      <div className="text-xs text-slate-400">Mean IOU</div>
                     </div>
                     <div className="text-center bg-white/5 rounded-xl p-4">
                       <div className="text-2xl font-black text-green-400">{approach.metrics.accuracy}</div>
