@@ -15,3 +15,4 @@ numpy
 matplotlib
 requests
 tensorflow-hub
+gdown
