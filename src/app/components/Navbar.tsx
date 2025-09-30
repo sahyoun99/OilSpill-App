@@ -15,7 +15,7 @@ interface NavItemProps {
   onClick?: () => void;
 }
 
-export default function Navbar(): JSX.Element {
+export default function Navbar(): React.JSX.Element {
   const [active, setActive] = useState<SectionId>('home');
   const [open, setOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
