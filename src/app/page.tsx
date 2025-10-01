@@ -7,7 +7,7 @@ const ModernHomepage = () => {
   const stats = [
     { label: 'Avg. mask IoU', value: '93.8%', icon: Activity },
     { label: 'Accuracy', value: '99.05%', icon: CheckCircle },
-    { label: 'Scenes analyzed', value: '1,240+', icon: Database },
+    { label: 'Scenes analyzed', value: '600+', icon: Database },
     { label: 'UAE focus regions', value: 'Gulf Coast', icon: MapPin },
   ];
 
