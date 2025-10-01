@@ -143,25 +143,19 @@ const ModernProblemPage = () => {
 
             {/* Video */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-3xl p-8 backdrop-blur-sm border border-red-400/20">
                 <div className="aspect-video bg-slate-800/50 rounded-2xl overflow-hidden relative group">
-                  <video 
-                    className="w-full h-full object-cover" 
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline 
-                    poster="/media/oilspill-poster.jpg"
-                  >
-                    <source src="/media/oilspill.mp4" type="video/mp4" />
-                  </video>
+                <img 
+      src="(160).jpg" 
+      alt="SAR Oil Spill Detection"
+      className="w-full h-full object-cover"
+    />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-xl font-bold mb-1">SAR Oil Spill Detection</h3>
                     <p className="text-slate-300 text-sm">Synthetic Aperture Radar imaging of oil contamination</p>
                   </div>
                 </div>
-              </div>
+              
             </div>
           </div>
         </div>

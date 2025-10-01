@@ -1,7 +1,7 @@
 'use client'
 import React, {useEffect } from 'react';
 import { ChevronDown, Activity, CheckCircle, MapPin, Database, ArrowRight} from 'lucide-react';
-
+import Link from 'next/link';
 const ModernHomepage = () => {
 
   const stats = [
@@ -201,10 +201,12 @@ const ModernHomepage = () => {
                   </div>
                 </div>
                 <p className="text-slate-300 mb-6 leading-relaxed">{approach.description}</p>
-                <div className="flex items-center text-blue-400 font-medium group-hover:text-blue-300 transition-colors duration-300">
-                  <span>Learn more</span>
-                  <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                </div>
+             <Link href="/approaches">
+  <div className="flex items-center text-blue-400 font-medium group-hover:text-blue-300 transition-colors duration-300 cursor-pointer">
+    <span>Learn more</span>
+    <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+  </div>
+</Link>
               </div>
             ))}
           </div>
