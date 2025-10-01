@@ -61,8 +61,8 @@ const evaluationMetrics = [
     metrics: [
       { name: 'Mean IoU (mIoU)', desc: 'Average IoU across all classes' },
       { name: 'Accuracy', desc: 'Overall correctness of oil/no-oil predictions' },
-      { name: 'IoU-oil', desc: 'Harmonic mean of precision and recall for segmentation' },
-       { name: 'IoU-No-oil', desc: 'Harmonic mean of precision and recall for segmentation' },
+      { name: 'IoU-oil', desc: 'segmentation metric that measures the overlap between predicted and ground truth masks, calculated as the ratio of their intersection over their union across the oil class.' },
+       { name: 'IoU-No-oil', desc: 'segmentation metric that measures the overlap between predicted and ground truth masks, calculated as the ratio of their intersection over their union across the no-oil class.' },
       { name: 'F1 Score', desc: 'Balance between precision and recall' },
     ],
     imageSrc: '/segmentation-metrics-defs.png'

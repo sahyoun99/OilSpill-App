@@ -53,6 +53,7 @@ ENV/
 server/.venv/
 server/venv/
 server/env/
+server/model.keras
 
 # Python cache
 *.pyc

@@ -5,8 +5,8 @@ import { AlertTriangle, Droplets, Fish, DollarSign, ExternalLink } from 'lucide-
 const FACTS = [
   { 
     icon: Droplets,
-    text: '1 gallon of oil contaminates 210M gallons of water',
-    stat: '210M:1',
+    text: '1 gallon of oil contaminates 1M gallons of water',
+    stat: '1m:1',
     color: 'text-blue-400'
   },
   { 
@@ -31,19 +31,19 @@ const FACTS = [
 
 const GALLERY: { src: string; alt: string; caption: string; description: string }[] = [
   { 
-    src: '/media/bp-horizon.jpg', 
+    src: 'https://cdn.britannica.com/58/139558-050-9EEE9E93/Fireboat-response-crews-blaze-oil-rig-Deepwater-April-21-2010.jpg', 
     alt: 'BP Deepwater Horizon oil spill', 
     caption: 'BP Deepwater Horizon',
     description: '210 million gallons spilled in Gulf of Mexico'
   },
   { 
-    src: '/media/uae-spill-1.jpg', 
+    src: 'https://www.arabianbusiness.com/wp-content/uploads/sites/3/cloud/2021/09/15/XNDfyZe1-144129613.jpg', 
     alt: 'Recent oil spill along the UAE coast', 
     caption: 'UAE Coast Incident',
     description: 'Regional spill affecting marine wildlife'
   },
   { 
-    src: '/media/uae-spill-2.jpg', 
+    src: 'https://response.restoration.noaa.gov/sites/default/files/images/13/dwh-skimmer-close-up-oil-boom-June-28-2010_coast-guard_980.jpg', 
     alt: 'Cleanup operations after UAE oil spill', 
     caption: 'Cleanup Operations',
     description: 'Multi-million dollar cleanup efforts'
